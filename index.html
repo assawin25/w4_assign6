@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+	<title>Assignment 6</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+
+	<!-- width, height and location -->
+	<div id="first-container">
+		<h1>Assignment#6</h1>
+		<h2>Task#1: Show width and height, current location, and a reload button</h2>
+		<i>The width and height should dynamically changed when you resize the window</i>	
+		<p id="wh"></p>
+		<p id="location"></p>
+		<button id="reload" value="Reload" onclick="refreshPage()">Reload Page</button>
+		<hr>
+	</div>
+
+	<!-- button with js -->
+	<div id="second-container">
+		<h3>Task#2: Manipulating DOM</h3>
+		<i>Instruction as described on the buttons</i>
+		<div id="pTag">
+		<p id="first-tag">P1 with an ID</p>
+		<p id="second-tag">P2 with an ID</p>
+		<p id="third-tag">P3 with and ID</p>
+		</div>
+		<p id="append"></p>
+		<button onclick="btnOne()">Change to yellow color of the third P Tag</button>
+		<button onclick="btnTwo()">Append Hello World Under P3</button>
+		<button onclick="btnThree()">Show/Hide</button>
+		<hr>
+	</div>
+
+	<!-- Mouse Events -->
+	<div id="third-container">
+		<h3>Task#3: Mouse and Click Event</h3>
+		<i>Show "On Mouse Over" when I mouse over the link; Show "On Mouse Out" when I mouse out the link;(do the same for Mouse Down, and Mouse Up) When Double Click, Show "On Double Click".</i>
+		
+		<div>
+			<br>
+			<a href="" id="mouse" onmouseover="over()" onmouseout="out()" onmousedown="down()" onmouseup="up()" ondblclick="double()">Show Event Here</a>
+		</div>
+	</div>
+
+	<!-- Javascript connection -->
+	<script type="text/javascript" src="js/first-container.js"></script>
+	<script type="text/javascript" src="js/second-container.js"></script>
+	<script type="text/javascript" src="js/third-container.js"></script>
+
+</body>
+
+</html>
